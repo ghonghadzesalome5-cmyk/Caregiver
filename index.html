@@ -1,214 +1,370 @@
 <!DOCTYPE html>
 <html lang="ka">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Caregiver</title>
-
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caregiver</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="hero">
+<div class="hero" id="home">
 
     <nav>
-      <div class="logo">Caregiver</div>
+        <div class="logo">Caregiver</div>
 
-      <div class="menu">
-        <a href="#about">ჩვენ შესახებ</a>
-        <a href="#services">მომსახურება</a>
-        <a href="#request">მჭირდება მომვლელი</a>
-        <a href="#contact">კონტაქტი</a>
-      </div>
+        <div class="menu">
+            <a href="#about">ჩვენ შესახებ</a>
+            <a href="#services">მომსახურება</a>
+            <a href="#request">მჭირდება მომვლელი</a>
+            <a href="#caregiver">ვარ მომვლელი</a>
+            <a href="#contact">კონტაქტი</a>
+        </div>
 
-      <button class="chat-btn">💬 მოგვწერეთ</button>
+        <button class="chat-btn" type="button">
+            💬 მოგვწერეთ
+        </button>
     </nav>
 
     <div class="hero-content">
 
-      <div class="text">
+        <div class="text">
 
-        <p class="small-title">CARE GIVER</p>
+            <p class="small-title">CARE GIVER</p>
 
-        <h1>
-          სანდო მომვლელის მოძიება თქვენი ოჯახის წევრისთვის
-        </h1>
+            <h1>
+                სანდო მომვლელის მოძიება თქვენი ოჯახის წევრისთვის
+            </h1>
 
-        <p class="description">
-          ჩვენ ვაკავშირებთ ოჯახებს გამოცდილ და მზრუნველ მომვლელებთან.
-          დაგვეკონტაქტეთ და ჩვენ დაგეხმარებით თქვენთვის შესაფერისი
-          მომვლელის მოძიებაში.
-        </p>
+            <p class="description">
+                ჩვენ ვაკავშირებთ ოჯახებს გამოცდილ და მზრუნველ
+                მომვლელებთან.
+                დაგვეკონტაქტეთ და ჩვენ დაგეხმარებით თქვენთვის
+                შესაფერისი მომვლელის მოძიებაში.
+            </p>
 
-        <div class="buttons">
-          <button class="primary">
-            მჭირდება მომვლელი
-          </button>
+            <div class="buttons">
 
-          <button class="secondary">
-            ვარ მომვლელი
-          </button>
+                <button class="primary" id="requestBtn" type="button">
+                    მჭირდება მომვლელი
+                </button>
+
+                <button class="secondary" id="caregiverBtn" type="button">
+                    ვარ მომვლელი
+                </button>
+
+            </div>
+
         </div>
 
-      </div>
-
-      <div class="image-box">
-        <div class="heart">♡</div>
-        <div class="person">👩‍🦳</div>
-      </div>
+        <div class="image-box">
+            <div class="heart">♡</div>
+            <div class="person">👩‍🦳</div>
+        </div>
 
     </div>
 
-  </div>
+</div>
 
 
-  <section id="about" class="section">
+<!-- ABOUT -->
+
+<section id="about" class="section">
 
     <h2>
-      თქვენი ოჯახის წევრი საუკეთესო ზრუნვას იმსახურებს
+        თქვენი ოჯახის წევრი საუკეთესო ზრუნვას იმსახურებს
     </h2>
 
     <p>
-      Caregiver ეხმარება ოჯახებს სანდო მომვლელის მოძიებაში
-      და დამსაქმებლებსა და დასაქმებულებს ერთმანეთთან აკავშირებს.
+        Caregiver ეხმარება ოჯახებს სანდო მომვლელის მოძიებაში
+        და დამსაქმებლებსა და დასაქმებულებს ერთმანეთთან აკავშირებს.
     </p>
 
-  </section>
+</section>
 
 
-  <section id="services" class="cards">
+<!-- SERVICES -->
+
+<section id="services" class="cards">
 
     <div class="card">
-      <div class="icon">👩‍🦳</div>
 
-      <h3>გჭირდებათ მომვლელი?</h3>
+        <div class="icon">👩‍🦳</div>
 
-      <p>
-        მოგვაწოდეთ ინფორმაცია და დაგეხმარებით შესაბამისი
-        მომვლელის მოძიებაში.
-      </p>
+        <h3>გჭირდებათ მომვლელი?</h3>
+
+        <p>
+            მოგვაწოდეთ ინფორმაცია და დაგეხმარებით შესაბამისი
+            მომვლელის მოძიებაში.
+        </p>
+
+        <button class="card-btn" type="button" data-target="request">
+            მოთხოვნის დატოვება
+        </button>
+
     </div>
 
 
     <div class="card">
-      <div class="icon">🤝</div>
 
-      <h3>ხართ მომვლელი?</h3>
+        <div class="icon">🤝</div>
 
-      <p>
-        დატოვეთ თქვენი ინფორმაცია და დაგვიკავშირდით
-        დასაქმების შესაძლებლობებისთვის.
-      </p>
+        <h3>ხართ მომვლელი?</h3>
+
+        <p>
+            დატოვეთ თქვენი ინფორმაცია და დაგვიკავშირდით
+            დასაქმების შესაძლებლობებისთვის.
+        </p>
+
+        <button class="card-btn" type="button" data-target="caregiver">
+            რეგისტრაცია
+        </button>
+
     </div>
 
 
     <div class="card">
-      <div class="icon">💬</div>
 
-      <h3>დაგვიკავშირდით</h3>
+        <div class="icon">💬</div>
 
-      <p>
-        თქვენი შეკითხვის შემთხვევაში მოგვწერეთ და გიპასუხებთ.
-      </p>
+        <h3>დაგვიკავშირდით</h3>
+
+        <p>
+            თქვენი შეკითხვის შემთხვევაში მოგვწერეთ და გიპასუხებთ.
+        </p>
+
+        <button class="card-btn" type="button" data-target="contact">
+            კონტაქტი
+        </button>
+
     </div>
 
-  </section>
+</section>
 
 
-  <section id="request" class="section">
+<!-- REQUEST FORM -->
+
+<section id="request" class="section form-section">
 
     <h2>მჭირდება მომვლელი</h2>
 
     <p>
-      შეავსეთ ფორმა და დაგვეკონტაქტეთ.
-      ჩვენ დაგეხმარებით თქვენთვის შესაფერისი
-      მომვლელის მოძიებაში.
+        შეავსეთ ფორმა და დაგვეკონტაქტეთ.
+        ჩვენ დაგეხმარებით თქვენთვის შესაფერისი
+        მომვლელის მოძიებაში.
     </p>
 
     <form
-      class="care-form"
-      action="https://formspree.io/f/xdeowqjb"
-      method="POST"
+        class="care-form"
+        action="https://formspree.io/f/xdeowqjb"
+        method="POST"
     >
 
-      <input
-        type="text"
-        name="name"
-        placeholder="თქვენი სახელი"
-        required
-      >
+        <input
+            type="hidden"
+            name="_subject"
+            value="Caregiver — ახალი მოთხოვნა"
+        >
 
-      <input
-        type="tel"
-        name="phone"
-        placeholder="ტელეფონის ნომერი"
-        required
-      >
+        <input
+            type="text"
+            name="name"
+            placeholder="თქვენი სახელი და გვარი"
+            required
+        >
 
-      <select name="help_type" required>
+        <input
+            type="tel"
+            name="phone"
+            placeholder="ტელეფონის ნომერი"
+            required
+        >
 
-        <option value="">
-          რა ტიპის დახმარება გჭირდებათ?
-        </option>
+        <input
+            type="email"
+            name="email"
+            placeholder="ელფოსტა"
+            required
+        >
 
-        <option>
-          ხანდაზმული ადამიანის მოვლა
-        </option>
+        <select name="help_type" required>
 
-        <option>
-          პაციენტის მოვლა
-        </option>
+            <option value="">
+                რა ტიპის დახმარება გჭირდებათ?
+            </option>
 
-        <option>
-          შეზღუდული შესაძლებლობის მქონე პირის მოვლა
-        </option>
+            <option value="ხანდაზმული ადამიანის მოვლა">
+                ხანდაზმული ადამიანის მოვლა
+            </option>
 
-        <option>
-          სხვა
-        </option>
+            <option value="პაციენტის მოვლა">
+                პაციენტის მოვლა
+            </option>
 
-      </select>
+            <option value="შეზღუდული შესაძლებლობის მქონე პირის მოვლა">
+                შეზღუდული შესაძლებლობის მქონე პირის მოვლა
+            </option>
 
-      <textarea
-        name="message"
-        placeholder="დამატებითი ინფორმაცია"
-        rows="5"
-      ></textarea>
+            <option value="ბავშვის მოვლა">
+                ბავშვის მოვლა
+            </option>
 
-      <button
-        type="submit"
-        class="primary"
-      >
-        მოთხოვნის გაგზავნა
-      </button>
+            <option value="სხვა">
+                სხვა
+            </option>
+
+        </select>
+
+        <textarea
+            name="message"
+            placeholder="დამატებითი ინფორმაცია"
+            rows="5"
+        ></textarea>
+
+        <button
+            type="submit"
+            class="primary"
+        >
+            მოთხოვნის გაგზავნა
+        </button>
 
     </form>
 
-  </section>
+</section>
 
 
-  <footer id="contact">
+<!-- CAREGIVER FORM -->
+
+<section id="caregiver" class="section form-section">
+
+    <h2>ვარ მომვლელი</h2>
+
+    <p>
+        თუ ხართ მომვლელი და ეძებთ სამუშაოს,
+        შეავსეთ ფორმა და დაგვიტოვეთ თქვენი ინფორმაცია.
+    </p>
+
+    <form
+        class="care-form"
+        action="https://formspree.io/f/xdeowqjb"
+        method="POST"
+    >
+
+        <input
+            type="hidden"
+            name="_subject"
+            value="Caregiver — ახალი მომვლელი"
+        >
+
+        <input
+            type="text"
+            name="caregiver_name"
+            placeholder="სახელი და გვარი"
+            required
+        >
+
+        <input
+            type="tel"
+            name="caregiver_phone"
+            placeholder="ტელეფონის ნომერი"
+            required
+        >
+
+        <input
+            type="email"
+            name="caregiver_email"
+            placeholder="ელფოსტა"
+            required
+        >
+
+        <input
+            type="number"
+            name="age"
+            placeholder="ასაკი"
+            min="18"
+            max="100"
+        >
+
+        <input
+            type="text"
+            name="city"
+            placeholder="ქალაქი"
+            required
+        >
+
+        <select name="experience" required>
+
+            <option value="">
+                რამდენი გამოცდილება გაქვთ?
+            </option>
+
+            <option value="გამოცდილება არ მაქვს">
+                გამოცდილება არ მაქვს
+            </option>
+
+            <option value="1-2 წელი">
+                1-2 წელი
+            </option>
+
+            <option value="3-5 წელი">
+                3-5 წელი
+            </option>
+
+            <option value="5 წელზე მეტი">
+                5 წელზე მეტი
+            </option>
+
+        </select>
+
+        <textarea
+            name="caregiver_message"
+            placeholder="მოკლედ მოგვწერეთ თქვენი გამოცდილების შესახებ"
+            rows="5"
+        ></textarea>
+
+        <button
+            type="submit"
+            class="primary"
+        >
+            ინფორმაციის გაგზავნა
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<footer id="contact">
 
     <h2>Caregiver</h2>
 
     <p>
-      სანდო ზრუნვა თქვენი ოჯახის წევრებისთვის.
+        სანდო ზრუნვა თქვენი ოჯახის წევრებისთვის.
     </p>
 
     <p>
-      📞 ტელეფონი: თქვენი ნომერი
+        📞 ტელეფონი: თქვენი ნომერი
     </p>
 
     <p>
-      💬 WhatsApp: თქვენი ნომერი
+        💬 WhatsApp: თქვენი ნომერი
     </p>
 
-  </footer>
+    <button
+        class="secondary"
+        type="button"
+        onclick="window.location.href='#home'"
+    >
+        ↑ მთავარზე დაბრუნება
+    </button>
+
+</footer>
 
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
