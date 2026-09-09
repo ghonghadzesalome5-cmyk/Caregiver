@@ -229,3 +229,36 @@ footer h2 {
 #caregiver.show-form {
     display: block;
 }
+/* საკონტაქტო ინფორმაციის ლამაზი სტილი */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 25px 0 35px;
+}
+
+.contact-link {
+    color: inherit;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #8b6f5a;
+    transform: translateY(-2px);
+}
+
+/* "მოგვწერეთ" ფორმა */
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 35px;
+}
+
+.contact-form h3 {
+    margin-bottom: 20px;
+}
