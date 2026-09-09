@@ -218,3 +218,14 @@ footer h2 {
     align-items: center;
   }
 }
+/* ფორმები თავიდან დამალულია */
+#request,
+#caregiver {
+    display: none;
+}
+
+/* ფორმა გამოჩნდება მაშინ, როცა მომხმარებელი მასზე გადავა */
+#request.show-form,
+#caregiver.show-form {
+    display: block;
+}
