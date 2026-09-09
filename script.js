@@ -1,25 +1,39 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // მთავარი ღილაკი — მჭირდება მომვლელი
-    const requestBtn = document.getElementById("requestBtn");
+    function showSection(sectionId) {
 
-    if (requestBtn) {
-        requestBtn.addEventListener("click", function () {
-            document.getElementById("request").scrollIntoView({
-                behavior: "smooth"
-            });
+        const section = document.getElementById(sectionId);
+
+        if (!section) return;
+
+        // ფორმის ჩვენება
+        if (sectionId === "request" || sectionId === "caregiver") {
+            section.classList.add("show-form");
+        }
+
+        // შესაბამის სექციაზე გადასვლა
+        section.scrollIntoView({
+            behavior: "smooth"
         });
     }
 
 
-    // მთავარი ღილაკი — ვარ მომვლელი
+    // მჭირდება მომვლელი
+    const requestBtn = document.getElementById("requestBtn");
+
+    if (requestBtn) {
+        requestBtn.addEventListener("click", function () {
+            showSection("request");
+        });
+    }
+
+
+    // ვარ მომვლელი
     const caregiverBtn = document.getElementById("caregiverBtn");
 
     if (caregiverBtn) {
         caregiverBtn.addEventListener("click", function () {
-            document.getElementById("caregiver").scrollIntoView({
-                behavior: "smooth"
-            });
+            showSection("caregiver");
         });
     }
 
@@ -32,30 +46,25 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
 
             const targetId = button.getAttribute("data-target");
-            const target = document.getElementById(targetId);
 
-            if (target) {
-                target.scrollIntoView({
-                    behavior: "smooth"
-                });
-            }
+            showSection(targetId);
 
         });
 
     });
 
 
-    // "მოგვწერეთ" ღილაკი
+    // მოგვწერეთ
     const chatBtn = document.querySelector(".chat-btn");
 
     if (chatBtn) {
+
         chatBtn.addEventListener("click", function () {
 
-            document.getElementById("contact").scrollIntoView({
-                behavior: "smooth"
-            });
+            showSection("contact");
 
         });
+
     }
 
 
@@ -69,8 +78,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const button = form.querySelector("button[type='submit']");
 
             if (button) {
+
                 button.textContent = "იგზავნება...";
                 button.disabled = true;
+
             }
 
         });
