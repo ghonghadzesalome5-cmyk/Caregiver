@@ -335,156 +335,158 @@
 </section>
 
 
-<!-- CONTACT SECTION -->
-<section id="contact" class="contact-section">
-  <div class="contact-container">
+დ<!-- CONTACT FOOTER -->
+<footer id="contact" class="site-footer">
 
-    <div class="contact-header">
-      <span class="contact-icon">✉️</span>
-      <h2>დაგვიკავშირდით</h2>
+  <div class="footer-content">
+
+    <div class="footer-brand">
+      <h2>Caregiver</h2>
+      <p>სანდო ზრუნვა თქვენი ოჯახის წევრებისთვის.</p>
+    </div>
+
+    <div class="footer-contact">
+
+      <a href="tel:+995558102102" class="footer-contact-item">
+        <span>📞</span>
+        <span>+995 558 102 102</span>
+      </a>
+
+      <a
+        href="https://wa.me/995558102102"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="footer-contact-item"
+      >
+        <span>💬</span>
+        <span>WhatsApp</span>
+      </a>
+
+      <a
+        href="mailto:caregiverforyou7@gmail.com"
+        class="footer-contact-item"
+      >
+        <span>✉️</span>
+        <span>caregiverforyou7@gmail.com</span>
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Caregiver. ყველა უფლება დაცულია.</p>
+
+    <button
+      class="footer-home-btn"
+      type="button"
+      onclick="window.location.href='#home'"
+    >
+      ↑ მთავარზე დაბრუნება
+    </button>
+  </div>
+
+</footer>
+
+
+<!-- CONTACT MODAL -->
+<div id="contactModal" class="contact-modal">
+
+  <div class="contact-modal-overlay"></div>
+
+  <div class="contact-modal-box">
+
+    <button
+      type="button"
+      class="contact-modal-close"
+      aria-label="დახურვა"
+    >
+      ×
+    </button>
+
+    <div class="contact-modal-header">
+      <span class="contact-modal-icon">✉️</span>
+
+      <h2>მოგვწერეთ</h2>
+
       <p>
-        თუ დაინტერესებული ხართ თანამშრომლობით ან გაქვთ შეკითხვა,
-        მოგვწერეთ. სიამოვნებით დაგიკავშირდებით.
+        დაგვიტოვეთ თქვენი შეტყობინება და
+        ჩვენ აუცილებლად დაგიკავშირდებით.
       </p>
     </div>
 
     <form
-      action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+      class="contact-modal-form"
+      action="https://formspree.io/f/xdeowqjb"
       method="POST"
-      class="contact-form"
     >
 
-      <div class="form-row">
-        <div class="form-group">
-          <label for="name">სახელი და გვარი</label>
+      <input
+        type="hidden"
+        name="_subject"
+        value="Caregiver — ახალი შეტყობინება საიტიდან"
+      >
+
+      <div class="modal-form-row">
+
+        <div class="modal-field">
+          <label for="contactName">სახელი და გვარი</label>
+
           <input
             type="text"
-            id="name"
+            id="contactName"
             name="name"
-            placeholder="შეიყვანეთ თქვენი სახელი და გვარი"
+            placeholder="მაგ. სალომე გიორგაძე"
             required
           >
         </div>
 
-        <div class="form-group">
-          <label for="phone">ტელეფონის ნომერი</label>
+        <div class="modal-field">
+          <label for="contactPhone">ტელეფონი</label>
+
           <input
             type="tel"
-            id="phone"
+            id="contactPhone"
             name="phone"
             placeholder="+995 5XX XX XX XX"
-            required
           >
         </div>
+
       </div>
 
-      <div class="form-group">
-        <label for="email">ელფოსტა</label>
+      <div class="modal-field">
+        <label for="contactEmail">ელფოსტა</label>
+
         <input
           type="email"
-          id="email"
+          id="contactEmail"
           name="email"
           placeholder="თქვენი ელფოსტა"
           required
         >
       </div>
 
-      <div class="form-group">
-        <label for="message">თქვენი წერილი</label>
+      <div class="modal-field">
+        <label for="contactMessage">თქვენი შეტყობინება</label>
+
         <textarea
-          id="message"
+          id="contactMessage"
           name="message"
           rows="8"
-          placeholder="დაწერეთ თქვენი შეტყობინება..."
+          placeholder="დაწერეთ თქვენი წერილი..."
           required
         ></textarea>
       </div>
 
-      <input
-        type="hidden"
-        name="_subject"
-        value="ახალი შეტყობინება Caregiver-ის საიტიდან"
+      <button
+        type="submit"
+        class="modal-send-btn"
       >
-
-      <button type="submit" class="send-button">
-        ✉️ წერილის გაგზავნა
+        ✉️ შეტყობინების გაგზავნა
       </button>
 
     </form>
 
-    <div class="contact-details">
-
-      <div class="contact-detail">
-        <span>📞</span>
-        <div>
-          <strong>ტელეფონი</strong>
-          <a href="tel:+995558102102">+995 558 102 102</a>
-        </div>
-      </div>
-
-      <div class="contact-detail">
-        <span>💬</span>
-        <div>
-          <strong>WhatsApp</strong>
-          <a
-            href="https://wa.me/995558102102"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            +995 558 102 102
-          </a>
-        </div>
-      </div>
-
-      <div class="contact-detail">
-        <span>✉️</span>
-        <div>
-          <strong>ელფოსტა</strong>
-          <a href="mailto:caregiverforyou7@gmail.com">
-            caregiverforyou7@gmail.com
-          </a>
-        </div>
-      </div>
-
-    </div>
-
   </div>
-</section>
 
-<footer class="site-footer">
-  <p>© 2026 Caregiver. ყველა უფლება დაცულია.</p>
-</footer>
-
-
-
-<footer id="contact">
-
-    <h2>Caregiver</h2>
-
-    <p>
-        სანდო ზრუნვა თქვენი ოჯახის წევრებისთვის.
-    </p>
-
-    <p>
-        📞 ტელეფონი: თქვენი ნომერი
-    </p>
-
-    <p>
-        💬 WhatsApp: თქვენი ნომერი
-    </p>
-
-    <button
-        class="secondary"
-        type="button"
-        onclick="window.location.href='#home'"
-    >
-        ↑ მთავარზე დაბრუნება
-    </button>
-
-</footer>
-
-
-<script src="script.js"></script>
-
-</body>
-</html>
+</div>
