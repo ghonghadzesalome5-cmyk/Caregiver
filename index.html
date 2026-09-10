@@ -335,101 +335,126 @@
 </section>
 
 
-<!-- CONTACT --> <!-- CONTACT -->
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
 
-<footer id="contact">
-
-    <h2>დაგვიკავშირდით</h2>
-
-    <p>
-        ჩვენ მზად ვართ დაგეხმაროთ.
-    </p>
-
-    <div class="contact-info">
-
-        <!-- ტელეფონი -->
-        <a href="tel:+995558102102" class="contact-link">
-            📞 +995 558 102 102
-        </a>
-
-        <!-- ელფოსტა -->
-     <a
-  href="mailto:caregiverforyou7@gmail.com"
-  class="contact-link"
->
-  ✉️ caregiverforyou7@gmail.com
-</a>
-
-
+    <div class="contact-header">
+      <span class="contact-icon">✉️</span>
+      <h2>დაგვიკავშირდით</h2>
+      <p>
+        თუ დაინტერესებული ხართ თანამშრომლობით ან გაქვთ შეკითხვა,
+        მოგვწერეთ. სიამოვნებით დაგიკავშირდებით.
+      </p>
     </div>
 
-
-    <!-- საიტიდან მოწერის ფორმა -->
-
-    <div class="contact-form">
-
-        <h3>მოგვწერეთ</h3>
-
-        <form
-            class="care-form"
-            action="https://formspree.io/f/xdeowqjb"
-            method="POST"
-        >
-
-            <input
-                type="hidden"
-                name="_subject"
-                value="Caregiver — ახალი შეტყობინება საიტიდან"
-            >
-
-            <input
-                type="text"
-                name="name"
-                placeholder="თქვენი სახელი"
-                required
-            >
-
-            <input
-                type="email"
-                name="email"
-                placeholder="თქვენი ელფოსტა"
-                required
-            >
-
-            <input
-                type="tel"
-                name="phone"
-                placeholder="ტელეფონის ნომერი"
-            >
-
-            <textarea
-                name="message"
-                placeholder="თქვენი შეტყობინება"
-                rows="5"
-                required
-            ></textarea>
-
-            <button
-                type="submit"
-                class="primary"
-            >
-                შეტყობინების გაგზავნა
-            </button>
-
-        </form>
-
-    </div>
-
-
-    <button
-        class="secondary"
-        type="button"
-        onclick="window.location.href='#home'"
+    <form
+      action="https://formspree.io/f/YOUR_FORMSPREE_ID"
+      method="POST"
+      class="contact-form"
     >
-        ↑ მთავარზე დაბრუნება
-    </button>
 
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">სახელი და გვარი</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="შეიყვანეთ თქვენი სახელი და გვარი"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="phone">ტელეფონის ნომერი</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+995 5XX XX XX XX"
+            required
+          >
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">ელფოსტა</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="თქვენი ელფოსტა"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="message">თქვენი წერილი</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="8"
+          placeholder="დაწერეთ თქვენი შეტყობინება..."
+          required
+        ></textarea>
+      </div>
+
+      <input
+        type="hidden"
+        name="_subject"
+        value="ახალი შეტყობინება Caregiver-ის საიტიდან"
+      >
+
+      <button type="submit" class="send-button">
+        ✉️ წერილის გაგზავნა
+      </button>
+
+    </form>
+
+    <div class="contact-details">
+
+      <div class="contact-detail">
+        <span>📞</span>
+        <div>
+          <strong>ტელეფონი</strong>
+          <a href="tel:+995558102102">+995 558 102 102</a>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <span>💬</span>
+        <div>
+          <strong>WhatsApp</strong>
+          <a
+            href="https://wa.me/995558102102"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            +995 558 102 102
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-detail">
+        <span>✉️</span>
+        <div>
+          <strong>ელფოსტა</strong>
+          <a href="mailto:caregiverforyou7@gmail.com">
+            caregiverforyou7@gmail.com
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>© 2026 Caregiver. ყველა უფლება დაცულია.</p>
 </footer>
+
 
 
 <footer id="contact">
